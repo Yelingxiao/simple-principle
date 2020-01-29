@@ -17,7 +17,6 @@ const App = {
 
     function increment() {
       state.count++;
-      state.count++;
     }
 
     onMount(() => {
@@ -26,6 +25,7 @@ const App = {
 
     onUpdate(() => {
       console.log("onUpdate");
+      console.log(state.count);
     });
 
     return {
